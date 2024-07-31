@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC243AD12C5A742900EAD093 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC243AD02C5A742900EAD093 /* SignInVC.swift */; };
 		ACACDFF52C59701400088421 /* SignUp2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACACDFF42C59701400088421 /* SignUp2VC.swift */; };
 		ACDC87F72C5905D700EC7787 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC87F62C5905D700EC7787 /* AppDelegate.swift */; };
 		ACDC87FB2C5905D700EC7787 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC87FA2C5905D700EC7787 /* SignUpVC.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC243AD02C5A742900EAD093 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		ACACDFF42C59701400088421 /* SignUp2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp2VC.swift; sourceTree = "<group>"; };
 		ACDC87F32C5905D700EC7787 /* MoneyTransfare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyTransfare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACDC87F62C5905D700EC7787 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC243AD22C5A771F00EAD093 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		ACDC87EA2C5905D700EC7787 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +67,7 @@
 		ACDC87F52C5905D700EC7787 /* MoneyTransfare */ = {
 			isa = PBXGroup;
 			children = (
+				AC243AD22C5A771F00EAD093 /* Network */,
 				ACDC880D2C591BC900EC7787 /* Controler */,
 				ACDC880A2C591B8300EC7787 /* Model */,
 				ACDC87F62C5905D700EC7787 /* AppDelegate.swift */,
@@ -82,6 +92,7 @@
 			children = (
 				ACDC87FA2C5905D700EC7787 /* SignUpVC.swift */,
 				ACACDFF42C59701400088421 /* SignUp2VC.swift */,
+				AC243AD02C5A742900EAD093 /* SignInVC.swift */,
 			);
 			path = Controler;
 			sourceTree = "<group>";
@@ -161,6 +172,7 @@
 				ACDC87FB2C5905D700EC7787 /* SignUpVC.swift in Sources */,
 				ACDC87F72C5905D700EC7787 /* AppDelegate.swift in Sources */,
 				ACACDFF52C59701400088421 /* SignUp2VC.swift in Sources */,
+				AC243AD12C5A742900EAD093 /* SignInVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

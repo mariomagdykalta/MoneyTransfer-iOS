@@ -60,14 +60,14 @@
                                     <action selector="signUpBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e1F-nz-zxs"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already Have an acount?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWH-kd-uaT">
-                                <rect key="frame" x="61" y="640" width="189" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an acount?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWH-kd-uaT">
+                                <rect key="frame" x="61" y="640" width="186" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13h-Es-d8t">
-                                <rect key="frame" x="258" y="640" width="51.666666666666686" height="21"/>
+                                <rect key="frame" x="255" y="640" width="52" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.5568627451" green="0.16078431369999999" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -129,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-118.32061068702289" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="-196" y="4"/>
         </scene>
         <!--Sign Up2VC-->
         <scene sceneID="7NT-ZS-3Ho">
@@ -228,6 +228,112 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i6g-90-vW9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="580.91603053435108" y="3.5211267605633805"/>
+        </scene>
+        <!--Sign InVC-->
+        <scene sceneID="HU2-7t-erC">
+            <objects>
+                <viewController storyboardIdentifier="SignInVC" id="0Se-yN-VXw" customClass="SignInVC" customModule="MoneyTransfare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mXY-Z2-ARM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speedo Transfer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cf4-7Z-St3">
+                                <rect key="frame" x="101.66666666666669" y="165" width="188" height="29"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8n-zN-q0p">
+                                <rect key="frame" x="24" y="276" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dhq-FG-wFk">
+                                <rect key="frame" x="24" y="305" width="343" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nb-CK-zGp">
+                                <rect key="frame" x="-2" y="67" width="395" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waO-S7-zMb">
+                                <rect key="frame" x="24" y="481" width="343" height="51"/>
+                                <color key="backgroundColor" red="0.52941176469999995" green="0.1176470588" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign In">
+                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="signUpBtnTapped:" destination="0Se-yN-VXw" eventType="touchUpInside" id="BDP-FG-TAF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an acount?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhu-hw-4Xn">
+                                <rect key="frame" x="66.999999999999986" y="547" width="169.66666666666663" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAV-K3-p1J">
+                                <rect key="frame" x="24" y="378" width="73.666666666666671" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iHG-XI-BL4">
+                                <rect key="frame" x="24" y="406" width="343" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtb-0a-OyV">
+                                <rect key="frame" x="244.66666666666663" y="547" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.5568627451" green="0.16078431369999999" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wSG-5b-OJI"/>
+                        <color key="backgroundColor" red="1" green="0.91764705879999997" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dhq-FG-wFk" firstAttribute="height" secondItem="mXY-Z2-ARM" secondAttribute="height" multiplier="0.0586854" id="0C5-IV-Scx"/>
+                            <constraint firstItem="Dhq-FG-wFk" firstAttribute="top" secondItem="P8n-zN-q0p" secondAttribute="bottom" constant="8" symbolic="YES" id="1PR-nA-ZR6"/>
+                            <constraint firstItem="P8n-zN-q0p" firstAttribute="leading" secondItem="wSG-5b-OJI" secondAttribute="leading" constant="24" id="2lb-mC-yel"/>
+                            <constraint firstItem="iHG-XI-BL4" firstAttribute="top" secondItem="aAV-K3-p1J" secondAttribute="bottom" constant="8" symbolic="YES" id="3kj-jS-9ip"/>
+                            <constraint firstItem="Dhq-FG-wFk" firstAttribute="leading" secondItem="P8n-zN-q0p" secondAttribute="leading" id="41q-L7-UqS"/>
+                            <constraint firstItem="waO-S7-zMb" firstAttribute="width" secondItem="iHG-XI-BL4" secondAttribute="width" id="9ss-Jd-zHn"/>
+                            <constraint firstItem="aAV-K3-p1J" firstAttribute="leading" secondItem="Dhq-FG-wFk" secondAttribute="leading" id="CUm-kO-rHk"/>
+                            <constraint firstItem="waO-S7-zMb" firstAttribute="top" secondItem="iHG-XI-BL4" secondAttribute="bottom" constant="25" id="DKg-Ct-a6J"/>
+                            <constraint firstItem="Dhq-FG-wFk" firstAttribute="width" secondItem="mXY-Z2-ARM" secondAttribute="width" multiplier="0.872774" id="Dkz-mr-fym"/>
+                            <constraint firstItem="iHG-XI-BL4" firstAttribute="width" secondItem="Dhq-FG-wFk" secondAttribute="width" id="HkC-du-zGp"/>
+                            <constraint firstItem="aAV-K3-p1J" firstAttribute="top" secondItem="Dhq-FG-wFk" secondAttribute="bottom" constant="23" id="KrJ-pH-NY0"/>
+                            <constraint firstItem="4nb-CK-zGp" firstAttribute="top" secondItem="wSG-5b-OJI" secondAttribute="top" constant="8" id="Ovc-2a-P3a"/>
+                            <constraint firstItem="iHG-XI-BL4" firstAttribute="leading" secondItem="aAV-K3-p1J" secondAttribute="leading" id="Vkl-K6-8ZK"/>
+                            <constraint firstItem="Vtb-0a-OyV" firstAttribute="top" secondItem="waO-S7-zMb" secondAttribute="bottom" constant="15" id="WLu-fu-xYD"/>
+                            <constraint firstItem="Cf4-7Z-St3" firstAttribute="leading" secondItem="wSG-5b-OJI" secondAttribute="leading" constant="101.66666666666669" id="ZdJ-9H-lHp"/>
+                            <constraint firstItem="Bhu-hw-4Xn" firstAttribute="leading" secondItem="wSG-5b-OJI" secondAttribute="leading" constant="67" id="cH6-jc-grt"/>
+                            <constraint firstItem="Bhu-hw-4Xn" firstAttribute="top" secondItem="waO-S7-zMb" secondAttribute="bottom" constant="15" id="dGm-S3-ELE"/>
+                            <constraint firstItem="Vtb-0a-OyV" firstAttribute="leading" secondItem="Bhu-hw-4Xn" secondAttribute="trailing" constant="8" symbolic="YES" id="fO0-Ee-fng"/>
+                            <constraint firstItem="wSG-5b-OJI" firstAttribute="leading" secondItem="4nb-CK-zGp" secondAttribute="leading" constant="2" id="g1r-L4-cnR"/>
+                            <constraint firstItem="P8n-zN-q0p" firstAttribute="top" secondItem="Cf4-7Z-St3" secondAttribute="bottom" constant="82" id="lIJ-RC-bUC"/>
+                            <constraint firstItem="iHG-XI-BL4" firstAttribute="height" secondItem="Dhq-FG-wFk" secondAttribute="height" id="lyc-Pm-tnx"/>
+                            <constraint firstItem="waO-S7-zMb" firstAttribute="leading" secondItem="iHG-XI-BL4" secondAttribute="leading" id="mgv-vs-nwG"/>
+                            <constraint firstItem="4nb-CK-zGp" firstAttribute="width" secondItem="mXY-Z2-ARM" secondAttribute="width" multiplier="1.00509" id="rNZ-JN-fdS"/>
+                            <constraint firstItem="waO-S7-zMb" firstAttribute="height" secondItem="iHG-XI-BL4" secondAttribute="height" multiplier="1.02" id="sxu-Gf-Ma1"/>
+                            <constraint firstItem="Cf4-7Z-St3" firstAttribute="top" secondItem="4nb-CK-zGp" secondAttribute="bottom" constant="68" id="tEc-co-qWh"/>
+                            <constraint firstItem="4nb-CK-zGp" firstAttribute="height" secondItem="mXY-Z2-ARM" secondAttribute="height" multiplier="0.0352113" id="vYU-ta-S46"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="iHG-XI-BL4" id="hN4-Ra-7Ey"/>
+                        <outlet property="fullNameTextField" destination="Dhq-FG-wFk" id="gAd-S3-TUM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7JI-H0-EfB" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1347" y="4"/>
         </scene>
     </scenes>
 </document>
