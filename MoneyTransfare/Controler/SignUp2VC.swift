@@ -9,6 +9,10 @@ import UIKit
 
 class SignUp2VC: UIViewController {
 
+    @IBOutlet weak var countryTextField: UITextField!
+    
+    @IBOutlet weak var bithdayTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

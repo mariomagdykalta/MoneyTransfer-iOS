@@ -66,8 +66,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sign In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13h-Es-d8t">
-                                <rect key="frame" x="258" y="640" width="53" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13h-Es-d8t">
+                                <rect key="frame" x="258" y="640" width="51.666666666666686" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.5568627451" green="0.16078431369999999" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -97,7 +97,6 @@
                             <constraint firstItem="Cg7-Ug-upT" firstAttribute="top" secondItem="97N-2q-jjd" secondAttribute="bottom" constant="8" symbolic="YES" id="OMZ-t0-D22"/>
                             <constraint firstItem="sz6-W8-4eW" firstAttribute="width" secondItem="arw-my-aHW" secondAttribute="width" id="PdW-BJ-GIK"/>
                             <constraint firstItem="GfW-Tx-AvW" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1.00509" id="PeL-Qa-VuA"/>
-                            <constraint firstItem="13h-Es-d8t" firstAttribute="top" secondItem="y7u-Ma-eoK" secondAttribute="bottom" constant="15" id="Pgw-Iu-ve8"/>
                             <constraint firstItem="sz6-W8-4eW" firstAttribute="leading" secondItem="vvz-Mj-PA5" secondAttribute="leading" id="Pok-RA-2Ow"/>
                             <constraint firstItem="y7u-Ma-eoK" firstAttribute="top" secondItem="sz6-W8-4eW" secondAttribute="bottom" constant="19" id="SZP-m2-SQF"/>
                             <constraint firstItem="y7u-Ma-eoK" firstAttribute="height" secondItem="sz6-W8-4eW" secondAttribute="height" multiplier="1.02" id="Sjf-fy-Ixn"/>
@@ -110,11 +109,12 @@
                             <constraint firstItem="sz6-W8-4eW" firstAttribute="top" secondItem="vvz-Mj-PA5" secondAttribute="bottom" constant="8" symbolic="YES" id="d4D-rC-2sB"/>
                             <constraint firstItem="sz6-W8-4eW" firstAttribute="height" secondItem="arw-my-aHW" secondAttribute="height" id="ga4-2o-yz1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="GfW-Tx-AvW" secondAttribute="leading" constant="2" id="iZa-Qj-UEd"/>
-                            <constraint firstItem="13h-Es-d8t" firstAttribute="centerY" secondItem="dWH-kd-uaT" secondAttribute="centerY" id="iyn-jv-eQG"/>
                             <constraint firstItem="97N-2q-jjd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="j0q-6k-9XM"/>
+                            <constraint firstItem="13h-Es-d8t" firstAttribute="top" secondItem="y7u-Ma-eoK" secondAttribute="bottom" constant="15" id="l3z-6g-6xT"/>
                             <constraint firstItem="97N-2q-jjd" firstAttribute="top" secondItem="i71-Tc-RS7" secondAttribute="bottom" constant="82" id="lue-Lu-dBv"/>
                             <constraint firstItem="i71-Tc-RS7" firstAttribute="top" secondItem="GfW-Tx-AvW" secondAttribute="bottom" constant="68" id="o3Q-Aa-mIx"/>
                             <constraint firstItem="arw-my-aHW" firstAttribute="leading" secondItem="fk7-fD-eO6" secondAttribute="leading" id="ohR-NI-0qa"/>
+                            <constraint firstItem="13h-Es-d8t" firstAttribute="leading" secondItem="dWH-kd-uaT" secondAttribute="trailing" constant="8" symbolic="YES" id="tob-5B-tUv"/>
                             <constraint firstItem="vvz-Mj-PA5" firstAttribute="top" secondItem="arw-my-aHW" secondAttribute="bottom" constant="20" id="uTC-8H-rEu"/>
                             <constraint firstItem="y7u-Ma-eoK" firstAttribute="leading" secondItem="sz6-W8-4eW" secondAttribute="leading" id="wDQ-LN-IKM"/>
                             <constraint firstItem="Cg7-Ug-upT" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0586854" id="wJg-3W-Aw4"/>
@@ -220,6 +220,10 @@
                             <constraint firstItem="ZFK-f1-Wm0" firstAttribute="top" secondItem="GHh-rI-Sbr" secondAttribute="bottom" constant="8" symbolic="YES" id="xLs-Xg-W1Z"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bithdayTextField" destination="ZFK-f1-Wm0" id="kI3-VN-O05"/>
+                        <outlet property="countryTextField" destination="iew-2N-jFF" id="Erx-24-cI8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i6g-90-vW9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
