@@ -62,6 +62,16 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		AC243AD32C5BB50600EAD093 /* SignIn&SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				ACDC87FA2C5905D700EC7787 /* SignUpVC.swift */,
+				ACACDFF42C59701400088421 /* SignUp2VC.swift */,
+				AC243AD02C5A742900EAD093 /* SignInVC.swift */,
+			);
+			path = "SignIn&SignUp";
+			sourceTree = "<group>";
+		};
 		ACDC87EA2C5905D700EC7787 = {
 			isa = PBXGroup;
 			children = (
@@ -106,9 +116,7 @@
 		ACDC880D2C591BC900EC7787 /* Controler */ = {
 			isa = PBXGroup;
 			children = (
-				ACDC87FA2C5905D700EC7787 /* SignUpVC.swift */,
-				ACACDFF42C59701400088421 /* SignUp2VC.swift */,
-				AC243AD02C5A742900EAD093 /* SignInVC.swift */,
+				AC243AD32C5BB50600EAD093 /* SignIn&SignUp */,
 			);
 			path = Controler;
 			sourceTree = "<group>";
