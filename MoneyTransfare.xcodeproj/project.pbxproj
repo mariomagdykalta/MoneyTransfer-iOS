@@ -15,9 +15,13 @@
 		ACDC88002C5905D800EC7787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACDC87FF2C5905D800EC7787 /* Assets.xcassets */; };
 		ACDC88032C5905D800EC7787 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDC88012C5905D800EC7787 /* LaunchScreen.storyboard */; };
 		ACDC880C2C591BA500EC7787 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC880B2C591BA500EC7787 /* User.swift */; };
+		AD7A4CC3702282B431CBD387 /* Pods_MoneyTransfare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63377838E7C9F4922CE3EE11 /* Pods_MoneyTransfare.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12543078B263EC5AF69377F4 /* Pods-MoneyTransfare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyTransfare.debug.xcconfig"; path = "Target Support Files/Pods-MoneyTransfare/Pods-MoneyTransfare.debug.xcconfig"; sourceTree = "<group>"; };
+		63377838E7C9F4922CE3EE11 /* Pods_MoneyTransfare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyTransfare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A947679DC4770C40D1DFD5C /* Pods-MoneyTransfare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyTransfare.release.xcconfig"; path = "Target Support Files/Pods-MoneyTransfare/Pods-MoneyTransfare.release.xcconfig"; sourceTree = "<group>"; };
 		AC243AD02C5A742900EAD093 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		ACACDFF42C59701400088421 /* SignUp2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp2VC.swift; sourceTree = "<group>"; };
 		ACDC87F32C5905D700EC7787 /* MoneyTransfare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyTransfare.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,12 +39,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD7A4CC3702282B431CBD387 /* Pods_MoneyTransfare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59BF887F814DD0058B0854B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12543078B263EC5AF69377F4 /* Pods-MoneyTransfare.debug.xcconfig */,
+				6A947679DC4770C40D1DFD5C /* Pods-MoneyTransfare.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AC243AD22C5A771F00EAD093 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +67,8 @@
 			children = (
 				ACDC87F52C5905D700EC7787 /* MoneyTransfare */,
 				ACDC87F42C5905D700EC7787 /* Products */,
+				59BF887F814DD0058B0854B7 /* Pods */,
+				C7B89552ADC8E26B1882D4C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +113,14 @@
 			path = Controler;
 			sourceTree = "<group>";
 		};
+		C7B89552ADC8E26B1882D4C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63377838E7C9F4922CE3EE11 /* Pods_MoneyTransfare.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACDC88072C5905D800EC7787 /* Build configuration list for PBXNativeTarget "MoneyTransfare" */;
 			buildPhases = (
+				913BAA7115695D01541D16EF /* [CP] Check Pods Manifest.lock */,
 				ACDC87EF2C5905D700EC7787 /* Sources */,
 				ACDC87F02C5905D700EC7787 /* Frameworks */,
 				ACDC87F12C5905D700EC7787 /* Resources */,
+				F481921715E6E4BF88CE0D25 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,6 +188,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		913BAA7115695D01541D16EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyTransfare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F481921715E6E4BF88CE0D25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoneyTransfare/Pods-MoneyTransfare-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoneyTransfare/Pods-MoneyTransfare-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoneyTransfare/Pods-MoneyTransfare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ACDC87EF2C5905D700EC7787 /* Sources */ = {
@@ -319,6 +387,7 @@
 		};
 		ACDC88082C5905D800EC7787 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12543078B263EC5AF69377F4 /* Pods-MoneyTransfare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -331,6 +400,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,6 +416,7 @@
 		};
 		ACDC88092C5905D800EC7787 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A947679DC4770C40D1DFD5C /* Pods-MoneyTransfare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -358,6 +429,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
