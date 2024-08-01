@@ -72,6 +72,14 @@
 			path = "SignIn&SignUp";
 			sourceTree = "<group>";
 		};
+		AC243AD42C5BB65000EAD093 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ACDC87FC2C5905D700EC7787 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		ACDC87EA2C5905D700EC7787 = {
 			isa = PBXGroup;
 			children = (
@@ -93,11 +101,11 @@
 		ACDC87F52C5905D700EC7787 /* MoneyTransfare */ = {
 			isa = PBXGroup;
 			children = (
-				AC243AD22C5A771F00EAD093 /* Network */,
-				ACDC880D2C591BC900EC7787 /* Controler */,
-				ACDC880A2C591B8300EC7787 /* Model */,
 				ACDC87F62C5905D700EC7787 /* AppDelegate.swift */,
-				ACDC87FC2C5905D700EC7787 /* Main.storyboard */,
+				ACDC880A2C591B8300EC7787 /* Model */,
+				AC243AD42C5BB65000EAD093 /* View */,
+				ACDC880D2C591BC900EC7787 /* Controler */,
+				AC243AD22C5A771F00EAD093 /* Network */,
 				ACDC87FF2C5905D800EC7787 /* Assets.xcassets */,
 				ACDC88012C5905D800EC7787 /* LaunchScreen.storyboard */,
 				ACDC88042C5905D800EC7787 /* Info.plist */,
